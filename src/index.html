@@ -8,11 +8,15 @@
 <body class="relative dark:bg-black/90 dark:text-white">
   <header class="fixed z-10 top-0 w-full flex h-[80px] md:items-center md:px-4 md:pr-4 md:pt-1 md:pb-1 border-0">
     
-    <!-- All sign for mobile screens -->
-    <div class="flex md:hidden " ></div>
+    <!-- 'All' sign header for mobile screens -->
+    <div class="flex flex-col lg:hidden mt-2 w-full justify-center items-center" >
+      <h1 class= "inline-block rounded py-0 font-semibold">All</h1>
+      <div class="w-6 border-2 border-black dark:border-white rounded-sm">
+      </div>
+    </div>
 
     <!-- navigation bar for md screens upwards-->
-    <nav class=" hidden md:flex border-0 border-gray-600 w-full h-[56px] items-center">
+    <nav class=" hidden lg:flex border-0 border-gray-600 w-full h-[56px] items-center">
       
       <!-- Left side of the nav bar -->
       <div class="flex h-full items-center" id="nav-left">
@@ -22,7 +26,7 @@
         </div>
         
         <!-- Home button -->
-        <div class="px-4 py-[12px] bg-black text-white rounded-3xl">
+        <div class="px-4 py-[12px] bg-black text-white dark:bg-white dark:text-black rounded-3xl">
           <p class="font-medium">Home</p>
         </div>
         
@@ -44,40 +48,44 @@
           </div>
         </div> 
       </form>
+
+      <!-- Right side of nav bar -->
       
       <div class="flex h-full w-[168px] max-w-[168px] items-center justify-center gap-2">
         <!-- Bell svg -->
-        <div class="p-2 py-2 rounded-full hover:bg-gray-200">
+        <div class="p-2 py-2 rounded-full dark:hover:bg-gray-200 hover:bg-gray-200">
           <svg class="fill-gray-500" width="24" height="24" aria-hidden="true" class="BNH gUZ U9O kVc" viewBox="0 0 24 24"><path d="M19 7v6.17A10 10 0 0 1 22 19H2a10 10 0 0 1 3-5.83V7a7 7 0 1 1 14 0m-4 14a3 3 0 1 1-6 0z"/></svg>
         </div>
         <!-- message svg -->
-        <div class="p-2 rounded-full hover:bg-gray-200">
+        <div class="relative p-2 rounded-full dark:hover:bg-gray-200 hover:bg-gray-200">
+          <span class="absolute right-1 top-0 w-2 h-2 bg-red-500 rounded-full"></span>
           <svg class="fill-gray-500" width="24" height="24" aria-hidden="true" class="Hn_ BNH gUZ U9O kVc" viewBox="0 0 24 24"><path d="M18 12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 0a11 11 0 0 0-8.52 17.95l-1.46 5.43a.5.5 0 0 0 .73.55l5.08-2.75A10.98 10.98 0 0 0 23 11 11 11 0 0 0 12 0"/></svg>
         </div>
         <!-- profile icon -->
-        <div class="p-2 rounded-full hover:bg-gray-200">
+        <div class="p-2 rounded-full dark:hover:bg-gray-200 hover:bg-gray-200">
           <div class="w-6 h-6 rounded-full bg-blue-400"></div>
         </div>
         <!-- arrow svg -->
-        <div class="p-1 rounded-full hover:bg-gray-200">
+        <div class="p-1 rounded-full dark:hover:bg-gray-200 hover:bg-gray-200">
           <svg class="fill-gray-500" width="12" height="12" aria-hidden="true" class="BNH gUZ U9O kVc" viewBox="0 0 24 24"><path d="M20.16 6.65 12 14.71 3.84 6.65a2.27 2.27 0 0 0-3.18 0 2.2 2.2 0 0 0 0 3.15L12 21 23.34 9.8a2.2 2.2 0 0 0 0-3.15 2.26 2.26 0 0 0-3.18 0"/></svg>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="z-0">
+  <!-- Main section -->
+  <main class="z-0 grid grid-cols-2 md:">
 
   </main>
 
   <!-- Question mark button -->
-  <div class="z-10 hidden md:flex fixed bottom-6 right-9">  
-    <div class="flex items-center justify-center w-16 h-16 border-2 rounded-full shadow-md">
+  <div class="z-10 hidden lg:flex fixed bottom-6 right-9">  
+    <div class="flex items-center justify-center w-16 h-16 border-2 rounded-full shadow-md dark:hover:bg-white/10 hover:bg-gray-100">
       <svg class="dark:fill-white" width="24" height="24" aria-hidden="true" class="Uvi gUZ U9O kVc" viewBox="0 0 24 24"><path d="M14.5 21.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m4.25-14.75a6.7 6.7 0 0 1-3.26 5.78c-.46.26-1.14 1.33-1.14 2.34a2.35 2.35 0 1 1-4.7 0c0-2.55 1.47-5.25 3.5-6.41.45-.26.9-.93.9-1.71a2.06 2.06 0 0 0-4.1 0 2.35 2.35 0 1 1-4.7 0 6.76 6.76 0 0 1 13.5 0"/></svg>
     </div>
   </div>
 
-  <footer class="flex md:hidden  z-10 fixed bottom-0 px-10 h-[60px] w-full">
+  <footer class="flex lg:hidden  z-10 fixed bottom-0 px-10 h-[60px] w-full">
     
     <!-- navigation bar for mobile(sm) screens -->
     <nav class="w-full h-full flex justify-between items-center ">
@@ -101,13 +109,16 @@
       </div>
 
       <!-- Messages icon-->
-      <div class="border-0 rounded-full items-center">
+      <div class="relative border-0 rounded-full items-center">
+        <span class="absolute right-0.5 -top-2 w-2 h-2 bg-red-500 rounded-full"></span>
         <svg class="fill-gray-500" width="28px" height="28px" aria-hidden="true" class="Hn_ BNH gUZ U9O kVc" viewBox="0 0 24 24"><path d="M18 12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 0a11 11 0 0 0-8.52 17.95l-1.46 5.43a.5.5 0 0 0 .73.55l5.08-2.75A10.98 10.98 0 0 0 23 11 11 11 0 0 0 12 0"/></svg>
       </div>
 
       <!-- User profile -->
       <div class="border-0 w-8 h-8 rounded-full">
-        <div class="w-full h-full bg-blue-400 rounded-full"></div>
+        <div class="flex items-center justify-center w-full h-full bg-blue-400 rounded-full">
+          <p class="font-semibold text-white">N</p>
+        </div>
       </div>
     </nav>
   </footer>
