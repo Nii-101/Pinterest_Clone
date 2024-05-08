@@ -8,25 +8,31 @@ const bellIconFill = document.getElementById("bell-icon-lg");
 const messageIcon = document.getElementById("message-lg");
 const messagePane = document.getElementById("message-lg-pane");
 const messageIconFill = document.getElementById("message-icon-lg");
-const Createbutton = document.getElementById('create');
-const Createdropdown = document.getElementById('create-menu');
+const createButton = document.getElementById('create');
+const createDropdown = document.getElementById('create-menu');
+const toggleColorMode = document.getElementById('mode-toggle');
 
-Createbutton.addEventListener('click', function() {
-    Createdropdown.classList.remove('hidden');
-    Createdropdown.classList.add('flex-col');
+toggleColorMode.addEventListener('click', function(){
+    document.body.classList.toggle('dark');
+    toggleColorMode.classList.toggle('rotate-180');
 });
 
-Createbutton.addEventListener('mouseover', function() {
-    Createdropdown.classList.remove('hidden');
-    Createdropdown.classList.add('flex-col');
+createButton.addEventListener('click', function() {
+    createDropdown.classList.remove('hidden');
+    createDropdown.classList.add('flex-col');
+});
+
+createButton.addEventListener('mouseover', function() {
+    createDropdown.classList.remove('hidden');
+    createDropdown.classList.add('flex-col');
 });
 
 document.addEventListener('click', function(event) {
     const targetElement = event.target;
 
-    // Check if the click target is not within the Createbutton or the Createdropdown
-    if (!Createbutton.contains(targetElement) && !Createdropdown.contains(targetElement)) {
-        Createdropdown.classList.add('hidden');
+    // Check if the click target is not within the createButton or the createDropdown
+    if (!createButton.contains(targetElement) && !createDropdown.contains(targetElement)) {
+        createDropdown.classList.add('hidden');
     }
 });
 
@@ -37,6 +43,15 @@ bellIcon.addEventListener('click', function(){
   bellPane.classList.toggle('lg:flex');
   bellIconFill.classList.toggle('fill-black')
   bellIconFill.classList.toggle('fill-gray-500')
+  if (document.body.classList.contains('dark')) {
+    bellIconFill.classList.add('fill-white');
+    }
+});
+
+bellIcon.addEventListener('mouseover', function(){
+    if (document.body.classList.contains('dark')) {
+        bellIconFill.classList.add('fill-black');
+        }
 });
 
 messageIcon.addEventListener('click', function(){
@@ -44,6 +59,9 @@ messageIcon.addEventListener('click', function(){
   messagePane.classList.toggle('lg:flex');
   messageIconFill.classList.toggle('fill-black')
   messageIconFill.classList.toggle('fill-gray-500')
+  if (document.body.classList.contains('dark')) {
+    messageIconFill.classList.add('fill-white');
+    }
 });
 
 document.addEventListener('click', function(event) {
@@ -54,6 +72,9 @@ document.addEventListener('click', function(event) {
         bellPane.classList.add('hidden');
         bellIconFill.classList.remove('fill-black')
         bellIconFill.classList.add('fill-gray-500')
+        if (bellIconFill.classList.contains('fill-white')) {
+            bellIconFill.classList.remove('fill-white');
+        }
     }
 
     if (!messageIcon.contains(targetElement) && !messagePane.contains(targetElement)) {
@@ -61,6 +82,9 @@ document.addEventListener('click', function(event) {
         messagePane.classList.add('hidden');
         messageIconFill.classList.remove('fill-black');
         messageIconFill.classList.add('fill-gray-500');
+        if (messageIconFill.classList.contains('fill-white')) {
+            messageIconFill.classList.remove('fill-white');
+        }
     }
     });
 })

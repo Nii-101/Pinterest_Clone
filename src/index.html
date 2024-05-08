@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="html">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,23 +62,23 @@
       <div class="flex h-full w-[168px] max-w-[168px] items-center justify-center gap-2">
         
         <!-- Bell svg -->
-        <button id="bell-lg" class="p-2 py-2 rounded-full dark:hover:bg-gray-200 hover:bg-gray-200">
+        <button id="bell-lg" class="p-2 py-2 rounded-full dark:hover:bg-white/30 hover:bg-gray-200">
           <svg id="bell-icon-lg" class="fill-gray-500" width="24" height="24" aria-hidden="true" class="BNH gUZ U9O kVc" viewBox="0 0 24 24"><path d="M19 7v6.17A10 10 0 0 1 22 19H2a10 10 0 0 1 3-5.83V7a7 7 0 1 1 14 0m-4 14a3 3 0 1 1-6 0z"/></svg>
         </button>
         
         <!-- message svg -->
-        <div id="message-lg" class="relative p-2 rounded-full dark:hover:bg-gray-200 hover:bg-gray-200">
+        <div id="message-lg" class="relative p-2 rounded-full dark:hover:bg-white/30 hover:bg-gray-200">
           <span class="absolute right-1 top-0 w-2 h-2 bg-red-500 rounded-full"></span>
           <svg id="message-icon-lg" class="fill-gray-500" width="24" height="24" aria-hidden="true" class="Hn_ BNH gUZ U9O kVc" viewBox="0 0 24 24"><path d="M18 12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 0a11 11 0 0 0-8.52 17.95l-1.46 5.43a.5.5 0 0 0 .73.55l5.08-2.75A10.98 10.98 0 0 0 23 11 11 11 0 0 0 12 0"/></svg>
         </div>
         
         <!-- profile icon -->
-        <div class="p-2 rounded-full dark:hover:bg-gray-200 hover:bg-gray-200">
+        <div class="p-2 rounded-full dark:hover:bg-white/30 hover:bg-gray-200">
           <div class="w-6 h-6 rounded-full bg-blue-400"></div>
         </div>
         
         <!-- arrow svg -->
-        <div id="arrow-lg" class="p-1 rounded-full dark:hover:bg-gray-200 hover:bg-gray-200">
+        <div id="arrow-lg" class="p-1 rounded-full dark:hover:bg-white/30 hover:bg-gray-200">
           <svg class="fill-gray-500" width="12" height="12" aria-hidden="true" class="BNH gUZ U9O kVc" viewBox="0 0 24 24"><path d="M20.16 6.65 12 14.71 3.84 6.65a2.27 2.27 0 0 0-3.18 0 2.2 2.2 0 0 0 0 3.15L12 21 23.34 9.8a2.2 2.2 0 0 0 0-3.15 2.26 2.26 0 0 0-3.18 0"/></svg>
         </div>
       </div> 
@@ -116,7 +116,8 @@
           <svg class="dark:fill-white" aria-hidden="true" aria-label="" class="Uvi gUZ U9O kVc" height="20" role="img" viewBox="0 0 24 24" width="20"><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path></svg>
         </div>  
       </header>
-      <!-- Main -->
+      
+      <!-- Body of the pane-->
       <main class="flex grow flex-col gap-2 px-2 mt-1">
         <!-- Search bar -->
         <section class="bg-white flex border-2 border-gray-300 hover:border-gray-400 hover:border-3 rounded-3xl h-12 w-full  px-4">
@@ -131,7 +132,7 @@
         </section> 
 
         <!-- Compose Message -->
-        <section class=" flex flex-row gap-2 p-2 w-full items-center hover:bg-gray-100 rounded-md">
+        <section class=" flex flex-row gap-2 p-2 w-full items-center hover:bg-gray-100 dark:hover:bg-white/80 dark:hover:text-black rounded-md">
           <div class="flex px-2 w-12 h-12 rounded-full bg-red-600 items-center justify-center">
             <svg class="fill-white" aria-label="Compose new message" class="ePF gUZ U9O kVc" height="20" role="img" viewBox="0 0 24 24" width="20"><path d="M23.3458 0.633387C22.4924 -0.211454 21.1083 -0.211454 20.2549 0.633387L18.7363 2.13571L21.8272 5.1931L23.3727 3.66441C24.2268 2.82023 24.1999 1.47756 23.3458 0.633387ZM17.762 3.10349L9.39669 11.3893L8.35883 15.6412L12.4876 14.4467L20.8963 6.23791L17.762 3.10349ZM4.70156 1.01393C2.10496 1.01393 0 3.16788 0 5.82491V19.1887C0 21.8458 2.10496 23.9997 4.70156 23.9997H18.2838C20.8804 23.9997 22.9854 21.8458 22.9854 19.1887V14.074C22.9854 13.1884 22.2838 12.5068 21.4182 12.5068C20.5527 12.5068 19.851 13.1884 19.851 14.074V19.1887C19.851 20.0744 19.1494 20.7924 18.2838 20.7924H4.70156C3.83603 20.7924 3.13437 20.0744 3.13437 19.1887V5.82491C3.13437 4.93923 3.83603 4.22125 4.70156 4.22125H9.92552C10.7911 4.22125 11.4927 3.50326 11.4927 2.61759C11.4927 1.73191 10.7911 1.01393 9.92552 1.01393H4.70156Z"></path></svg>
           </div>
@@ -139,13 +140,13 @@
         </section>
 
         <!-- Invite Friends -->
-        <section class=" flex flex-row gap-2 p-2 w-full items-center hover:bg-gray-100 rounded-md">
+        <section class=" flex flex-row gap-2 p-2 w-full items-center hover:bg-gray-100 dark:hover:bg-white/80 dark:hover:text-black rounded-md">
           <div class="flex px-2 w-12 h-12 rounded-full bg-gray-200 items-center justify-center">
             <svg aria-label="Invite your friends" class="Uvi gUZ U9O kVc" height="20" role="img" viewBox="0 0 24 24" width="20">
               <path d="M16.5 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8m0 1A7.5 7.5 0 0 0 9 19.5V21h15v-1.5a7.5 7.5 0 0 0-7.5-7.5M9.25 9.5H6.5V6.75a1.25 1.25 0 0 0-2.5 0V9.5H1.25a1.25 1.25 0 0 0 0 2.5H4v2.75a1.25 1.25 0 0 0 2.5 0V12h2.75a1.25 1.25 0 0 0 0-2.5"></path>
             </svg>
           </div>
-          <div class="h-full border-black">
+          <div class="flex flex-col h-full border-black justify-center">
             <h2 class="font-medium text-18 m-0 p-0 leading-[1.1em]">Invite your friends</h2>
             <p class="font-base text-18 text-[#767676] m-0 p-0 leading-[1em]">Connect to start chatting</p>
           </div>
@@ -158,12 +159,20 @@
 
     <!-- Question mark button -->
     <div class=" hidden z-10 lg:flex fixed bottom-6 right-6">  
-      <div id="question" class=" z-10 bg-white/100 dark:bg-black/100 flex items-center justify-center w-16 h-16 border-2 rounded-full shadow-md dark:hover:bg-gray-700 hover:bg-gray-100">
+      <div id="question" class=" z-10 bg-white/100 dark:bg-black/100 flex items-center justify-center w-14 h-14 border-2 rounded-full shadow-md dark:hover:bg-gray-700 hover:bg-gray-100">
         <svg id="question-mark" class="dark:fill-white" width="24" height="24" aria-hidden="true" class="Uvi gUZ U9O kVc" viewBox="0 0 24 24"><path d="M14.5 21.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m4.25-14.75a6.7 6.7 0 0 1-3.26 5.78c-.46.26-1.14 1.33-1.14 2.34a2.35 2.35 0 1 1-4.7 0c0-2.55 1.47-5.25 3.5-6.41.45-.26.9-.93.9-1.71a2.06 2.06 0 0 0-4.1 0 2.35 2.35 0 1 1-4.7 0 6.76 6.76 0 0 1 13.5 0"/></svg>
       </div>
     </div>
 
-    <section id="grid-section" class="w-full  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 grid-flow-row sm:grid-cols-3 gap-x-4 xl:gap-x-4 xl:px-4">
+    <!-- Dark Mode, Light Mode toggle button -->
+    <button class="fixed right-6 z-10 bottom-16 lg:bottom-24" id="mode-toggle">
+      <div class="flex w-12 lg:w-14 h-12 lg:h-14 rounded-full shadow-xl  border-2 border-gray-400 transform transition duration-500">
+        <div class="h-full w-[50%] rounded-l-full bg-black"></div>
+        <div class="h-full w-[50%] rounded-r-full bg-white"></div>
+      </div>
+    </button>
+
+    <section id="grid-section" class="w-full  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 grid-flow-row sm:grid-cols-3 gap-x-4 xl:gap-x-4 xl:px-2 xl:pl-2 ">
       
       <!-- Can i use js to make it responsive by saying something like: 'if w is equal to ** a certain max width **, it should increase grid-cols in section??' -->
       
