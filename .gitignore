@@ -1,1 +1,3 @@
 node_modules/
+assets/svg*
+./src/try_.html
