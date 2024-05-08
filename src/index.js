@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     alert("Welcome to Nii's Pinterest Clone🤗🤗");
 
+
 const bellIcon = document.getElementById("bell-lg");
 const bellPane = document.getElementById("bell-lg-pane");
 const bellIconFill = document.getElementById("bell-icon-lg");
@@ -11,6 +12,11 @@ const messageIconFill = document.getElementById("message-icon-lg");
 const createButton = document.getElementById('create');
 const createDropdown = document.getElementById('create-menu');
 const toggleColorMode = document.getElementById('mode-toggle');
+const profileMobile = document.getElementById('profile-name-mobile')
+const profileLarge = document.getElementById('profile-name-lg')
+
+profileMobile.textContent = `${firstLetter}`;
+profileLarge.textContent = `${firstLetter}`;
 
 toggleColorMode.addEventListener('click', function(){
     document.body.classList.toggle('dark');
