@@ -15,7 +15,7 @@
 
 ### Contact Me
 - [Email Me](mailto:noelamptey101@gmail.com)
-- [Call/WhatsApp Me](tel:+23320-241-179)
+- [Call/WhatsApp Me](tel:+23320241179)
 
 
 #### NB:
