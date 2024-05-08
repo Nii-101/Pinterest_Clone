@@ -1,7 +1,7 @@
 # Slightly Techie capstone project
 ## This is my attempt at creating a responsive pinterest clone as my site of choice
 
-* Link to the site: [Pinterest Clone](needleterest.netlify.app) *
+*Link to the site: [Pinterest Clone](https://needleterest.netlify.app)*
 
 ### Technologies used
 - HTML
@@ -14,8 +14,8 @@
 
 
 ### Contact Me
-- [Email](noelamptey101@gmail.com)
-- [Phone Number]((+233)20-241-179)
+- [Email Me](mailto:noelamptey101@gmail.com)
+- [Call/WhatsApp Me](tel:+23320-241-179)
 
 
 #### NB:
