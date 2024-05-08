@@ -1,7 +1,13 @@
 
 document.addEventListener("DOMContentLoaded", function(){
     alert("Welcome to Nii's Pinterest Clone🤗🤗");
+    let userName;
+    do{
+        userName = prompt("Please enter a username👇🏽👇🏽:");
+    }while (userName === null || userName.trim() === "");
+    const firstLetter =  userName.charAt(0).toUpperCase();
 
+    alert(`Have fun exploring ${userName}`);
 
 const bellIcon = document.getElementById("bell-lg");
 const bellPane = document.getElementById("bell-lg-pane");
